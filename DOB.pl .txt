@@ -1,0 +1,5 @@
+% Database of people with Date of Birth
+ person(rahul, 15, june, 2002).
+person(priya, 20, march, 2003).
+person(amit, 10, january, 2001).
+person(sita, 25, december, 2002).

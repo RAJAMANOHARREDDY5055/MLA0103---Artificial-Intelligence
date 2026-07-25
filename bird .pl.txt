@@ -1,0 +1,27 @@
+% Bird Database
+
+bird(eagle).
+bird(parrot).
+bird(penguin).
+bird(ostrich).
+bird(sparrow).
+
+% Flying birds
+can_fly(eagle).
+can_fly(parrot).
+can_fly(sparrow).
+
+% Non-flying birds
+cannot_fly(penguin).
+cannot_fly(ostrich).
+
+% Query to check whether a bird can fly
+fly(Bird) :-
+    can_fly(Bird),
+    write(Bird),
+    write(' can fly.').
+
+fly(Bird) :-
+    cannot_fly(Bird),
+    write(Bird),
+    write(' cannot fly.').

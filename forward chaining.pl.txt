@@ -1,0 +1,17 @@
+% Facts
+
+fact(bird).
+fact(has_wings).
+
+% Rules
+
+rule(can_fly) :-
+    fact(bird),
+    fact(has_wings).
+
+% Forward Chaining
+
+forward_chaining :-
+    rule(can_fly),
+    write('The bird can fly.'),
+    nl.

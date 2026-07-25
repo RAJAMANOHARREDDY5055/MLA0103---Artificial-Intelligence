@@ -1,0 +1,26 @@
+% Symptoms
+
+symptom(fever).
+symptom(cough).
+symptom(body_pain).
+symptom(sneezing).
+symptom(runny_nose).
+
+% Diseases
+
+disease(flu) :-
+    symptom(fever),
+    symptom(cough),
+    symptom(body_pain).
+
+disease(common_cold) :-
+    symptom(sneezing),
+    symptom(runny_nose).
+
+% Diagnosis
+
+diagnose(Disease) :-
+    disease(Disease),
+    write('The possible disease is: '),
+    write(Disease),
+    nl.

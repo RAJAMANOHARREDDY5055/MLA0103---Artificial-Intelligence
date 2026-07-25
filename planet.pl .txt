@@ -1,0 +1,10 @@
+% Planet Database
+
+planet(mercury, terrestrial, 1).
+planet(venus, terrestrial, 2).
+planet(earth, terrestrial, 3).
+planet(mars, terrestrial, 4).
+planet(jupiter, gas_giant, 5).
+planet(saturn, gas_giant, 6).
+planet(uranus, ice_giant, 7).
+planet(neptune, ice_giant, 8).

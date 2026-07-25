@@ -1,0 +1,10 @@
+% Facts
+
+bird(tweety).
+has_wings(tweety).
+
+% Rule
+
+can_fly(X) :-
+    bird(X),
+    has_wings(X).

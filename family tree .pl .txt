@@ -1,0 +1,15 @@
+% Disease and Diet Database
+
+diet(diabetes, low_sugar).
+diet(obesity, low_calorie).
+diet(anemia, iron_rich).
+diet(hypertension, low_salt).
+diet(heart_disease, low_fat).
+
+% Rule to suggest diet
+
+suggest_diet(Disease, Diet) :-
+    diet(Disease, Diet),
+    write('Suggested diet: '),
+    write(Diet),
+    nl.
