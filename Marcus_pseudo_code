@@ -1,0 +1,24 @@
+START
+
+1. Define the facts:
+   a. Marcus is a man.
+   b. Marcus is a Pompeian.
+   c. Caesar is a ruler.
+   d. Marcus tried to assassinate Caesar.
+
+2. Define the rules:
+   a. Every Pompeian is a Roman.
+   b. Every man is a person.
+   c. Every person is loyal to someone.
+   d. If a person tries to assassinate a ruler,
+      then the person is not loyal to that ruler.
+   e. If a Roman is not loyal to Caesar,
+      then the Roman hates Caesar.
+   f. If a Roman does not hate Caesar,
+      then the Roman is loyal to Caesar.
+
+3. Load the program in SWI-Prolog.
+
+4. Execute queries to verify the rules.
+
+STOP
