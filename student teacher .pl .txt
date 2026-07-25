@@ -1,0 +1,14 @@
+% Student facts
+student(rahul, s101).
+student(priya, s102).
+student(amit, s103).
+
+% Teacher facts
+teacher(dr_kumar, s101).
+teacher(dr_priya, s102).
+teacher(dr_raj, s103).
+
+% Subject Code facts
+subject(s101, computer_science).
+subject(s102, mathematics).
+subject(s103, artificial_intelligence).
