@@ -1,0 +1,36 @@
+A_Star(Graph, Start, Goal)
+
+Create a Priority Queue OPEN
+Insert Start with priority f(Start)
+
+Create an empty CLOSED set
+
+g(Start) = 0
+f(Start) = g(Start) + h(Start)
+
+While OPEN is not empty
+
+    current = Remove node with lowest f value
+
+    If current == Goal
+        Return Path
+
+    Add current to CLOSED
+
+    For each neighbour of current
+
+        tentative_g = g(current) + cost(current, neighbour)
+
+        If neighbour is in CLOSED
+            Continue
+
+        If neighbour is not in OPEN
+            Add neighbour to OPEN
+
+        Else if tentative_g >= g(neighbour)
+            Continue
+
+        g(neighbour) = tentative_g
+        f(neighbour) = g(neighbour) + h(neighbour)
+
+Return "Path Not Found"
