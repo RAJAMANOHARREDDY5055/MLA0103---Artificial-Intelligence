@@ -1,0 +1,11 @@
+DFS(Graph, node)
+
+Mark node as visited
+
+Print node
+
+For each neighbour of node
+
+    If neighbour is not visited
+
+        DFS(Graph, neighbour)

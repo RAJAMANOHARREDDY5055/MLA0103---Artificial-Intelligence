@@ -1,0 +1,29 @@
+MINIMAX(node, depth, maximizingPlayer)
+
+If node is terminal OR depth == 0
+
+    Return evaluation(node)
+
+If maximizingPlayer
+
+    best = -∞
+
+    For each child
+
+        value = MINIMAX(child, depth-1, False)
+
+        best = max(best, value)
+
+    Return best
+
+Else
+
+    best = +∞
+
+    For each child
+
+        value = MINIMAX(child, depth-1, True)
+
+        best = min(best, value)
+
+    Return best

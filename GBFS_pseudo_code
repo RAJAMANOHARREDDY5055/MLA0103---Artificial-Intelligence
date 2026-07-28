@@ -1,0 +1,21 @@
+GreedyBestFirstSearch(start, goal)
+
+Create Priority Queue OPEN
+
+Insert start into OPEN
+
+While OPEN is not empty
+
+    current = Remove node with smallest heuristic
+
+    If current == goal
+
+        Return path
+
+    Mark current visited
+
+    For each neighbour
+
+        If neighbour not visited
+
+            Insert neighbour into OPEN according to heuristic
