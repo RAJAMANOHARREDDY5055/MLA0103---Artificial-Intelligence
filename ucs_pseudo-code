@@ -1,0 +1,26 @@
+
+UniformCostSearch(Graph, Start, Goal)
+
+Create a priority queue PQ
+Insert (0, Start) into PQ
+
+Create an empty set Visited
+
+While PQ is not empty
+
+    (cost, node) = Remove node with minimum cost
+
+    If node is Goal
+        Return cost
+
+    If node is not visited
+
+        Mark node as visited
+
+        For each (neighbor, edgeCost) of node
+
+            If neighbor is not visited
+
+                Insert (cost + edgeCost, neighbor) into PQ
+
+Return "Goal Not Found"
