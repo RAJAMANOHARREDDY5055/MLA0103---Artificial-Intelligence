@@ -1,0 +1,36 @@
+AlphaBeta(node, depth, α, β, maximizingPlayer)
+
+If node is terminal OR depth == 0
+    Return evaluation(node)
+
+If maximizingPlayer
+
+    value = -∞
+
+    For each child
+
+        value = max(value,
+                    AlphaBeta(child, depth-1, α, β, False))
+
+        α = max(α, value)
+
+        If α ≥ β
+            Break   // Beta Cutoff
+
+    Return value
+
+Else
+
+    value = +∞
+
+    For each child
+
+        value = min(value,
+                    AlphaBeta(child, depth-1, α, β, True))
+
+        β = min(β, value)
+
+        If α ≥ β
+            Break   // Alpha Cutoff
+
+    Return value
